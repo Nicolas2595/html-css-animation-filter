@@ -174,3 +174,37 @@
         transform: rotate(0)
     }    
 }
+
+/*es.12*/
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: button-top-white;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes button-top-white {
+    0%{
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 70px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: button-bottom-white;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes button-bottom-white {
+    0%{
+        right: 10%;
+    }
+    50% {
+        right: calc(100% - 70px);
+    }
+    100% {
+        right: 10%;
+    }
+}
